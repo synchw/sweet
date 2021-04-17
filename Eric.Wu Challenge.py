@@ -53,16 +53,16 @@ model = sm.OLS(y, X).fit()
 model.summary()
 
 #model, y = B0 + B1*x, y = upvotes, B0 = constant, B1 = #oftitles, x = coefficient
-#null hypothesis: the model is inadequate in predicting the number of upvotes
-#alternative hypothesis: the model is good at predicting the number of upvotes
+#null hypothesis: the model is insignificant in predicting the number of upvotes
+#alternative hypothesis: the model is significant at predicting the number of upvotes
 #test statistics: p-value = 2.24*10^-25
 #rejection region: p-value < significance level alpha = 0.05
-#conclusion: Because p-value is smaller than alpha, we can reject the null hypothesis, and conclude that our model is good at predicting the number of upvotes.
+#conclusion: Because p-value is smaller than alpha, we can reject the null hypothesis, and conclude that our model is significant at predicting the number of upvotes.
 
 #conclusion: 
 #the model is y = -1.561*10^4 + 465.7987*x
 #the coefficient for the constant is -1.561*10^4
 #the coefficient for #oftitles is 465.7987; for every unit increase of #oftitles, upvotes increases by 465.7987 
 
-#because R-squared is a very high number (0.98), the model does very well in predicting our independent variable (upvotes)
+#because R-squared is a very high number (0.98), the independent variable (#oftitles) does very well in predicting our dependent variable (upvotes)
 
